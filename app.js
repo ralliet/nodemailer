@@ -11,7 +11,7 @@ app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
 // static folder
-app.set('/public',express.static(path.join(__dirname,'public')));
+app.use(express.static(__dirname + '/public'));
 
 //Parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', (req,res) => {
-    res.send("hello");
+    res.render('contact');
 })
 
 app.listen(3000,() => {
