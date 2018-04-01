@@ -1,0 +1,26 @@
+{
+  "name": "nodejsmailer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenalliet/nodemailer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubenalliet/nodemailer/issues"
+  },
+  "homepage": "https://github.com/rubenalliet/nodemailer#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "nodemailer": "^4.6.4",
+    "path": "^0.12.7"
+  }
+}

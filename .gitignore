@@ -1,0 +1,5 @@
+# exclude debug files
+npm-debug*
+
+# exclude node modules
+node_modules
